@@ -947,8 +947,28 @@ transition-duration: 250ms;
   background: rgba(33, 150, 243, 0.9);
   width: 370px;
   height: 294px;
+  position:relative;
   
-  
+}
+.img-cover::before {
+  position:absolute;
+  content:'';
+  display:inline-block;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  transform:translateY(+100%);
+}
+.img-cover::after {
+  content:'';
+  display:inline-block;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  position:absolute;
+  transform:translateY(-294px);
+}
+.project-item:hover::
 }
  .border-special {
   border-left:1px;
