@@ -327,8 +327,6 @@ background: #FFFFFF;
   width: 18px;
 height: 18px;
   fill: #000000;
-
- 
 }
 .modal-button {
   display:flex;
@@ -430,6 +428,32 @@ right:8px;
   }
   .task{
     display:flex;
+  }
+  .task-block {
+    position: relative;
+
+  
+  }
+  .text-img {
+  position: absolute;
+  bottom:0;
+  left:0;
+
+ padding-top: 27px;
+ padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  }
+  .task-description {
+    text-align: center;
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
   }
   .task-item {
     width: 370px;
