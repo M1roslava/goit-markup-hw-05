@@ -37,11 +37,20 @@
         <section class="solutions">
         <div class="container">
         <h1 class="title-h1">Эффективные решения <br>для вашего бизнеса</h1>
-        <button  class="order-button" type="button">Заказать услугу</button>
+        <button  class="order-button" type="button" data-modal-open>Заказать услугу</button></div>
         </section>
+    
+<!-- MODAL WINDOW -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal"> 
+        <button class="modal-button" data-modal-close>
+            <svg class="icon-close">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
     </div>
-
-    <section class="advantages"> 
+</div>
+        <section class="advantages"> 
         <div class="container advantage">
         <h2 class="title-hidden">Наши преимущества</h2>
     
@@ -261,7 +270,6 @@
         </div>
     </section>
 </main>
-</body>
 <footer class="page-footer">
     <div class="container foot">
         <ul class="footer-list">
@@ -307,5 +315,7 @@
     </address>
  </div>
 </footer>
+<script src="./js/modal.js"></script>
+</body>
 </html>
 

@@ -3,7 +3,7 @@
 цвет телефона и почты #757575 
 цвет акцента  в навигации #2196F3 
 цвет кнопки #2196F3
-цветк акцент на кнопке #188CE8 
+цвет акцент на кнопке #188CE8 
 цвет заголовков #212121
 основной цвет текста  #757575
 текст в секции 1 #FFFFFF
@@ -20,6 +20,7 @@
   --secondary-bcg-color: #F5F4FA;
   --footer-color: #2F303A;
   --h-text-color:#212121;
+  --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   }
    /* Глобальные характеристики */
   
@@ -32,6 +33,8 @@
   }
   a {
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
   }
   
   a .site-nav,
@@ -71,6 +74,7 @@
   .logo-link-two:hover {
     text-decoration: underline;
     color:var(--primary-accent-color);
+    
   }
   .logo-link-one, 
   .logo-link-two:focus {
@@ -167,6 +171,7 @@
   /* flex-wrap: nowrap; */
   display: flex;
   /* justify-content: space-between; */
+
    }
 
   .site-nav-li+.site-nav-li {
@@ -199,6 +204,8 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
   }
 
   .header-contacts:hover,
@@ -280,6 +287,8 @@ margin-right: auto;
   letter-spacing: 0.06em;
   color:var(--main-bcg-color);
   top: 440px;
+  transition-property: background-color;
+  transition-duration: 250ms;
   }
   .order-button:hover {
   text-decoration: underline var(--primary-accent-color);
@@ -292,6 +301,47 @@ margin-right: auto;
     color:var(--main-bcg-color);
     background-color:var(--secondary-accent-color)
     }
+.backdrop {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+background: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity:0;
+  pointer-events:none;
+}
+.modal {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+
+width: 528px;
+height: 581px;
+background: #FFFFFF;
+}
+.icon-close {
+  width: 18px;
+height: 18px;
+  fill: #000000;
+
+ 
+}
+.modal-button {
+  display:flex;
+  align-items: center;
+  width: 30px;
+height: 30px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius:50%;
+position:absolute;
+top:8px;
+right:8px;
+}
   /* Убираю маркеры li */
   .list {
     list-style-type: none;
@@ -481,11 +531,16 @@ margin-right: 0px;
   margin-right: 10px;
   padding: 12px;
   cursor: pointer;
+  transition-property:background-color;
+    transition-duration: 250ms;
   }
   .s-icon {
     width:20px;
     height:20px;
     fill:currentColor;
+    transition-property:fill;
+    transition-duration: 250ms;
+  
   }
   .s-icon:hover,
   .s-icon:focus {
@@ -529,6 +584,8 @@ margin-right: 0px;
   .net-list{
     display:inline-block;
     flex-wrap: nowrap;
+    transition-property:color;
+    transition-duration: 1250ms;
    
   }
   .net-list:hover,
@@ -546,6 +603,8 @@ margin-right: 0px;
   align-items:center;
   margin-right: 10px;
   cursor: pointer;
+  transition-property:background-color;
+    transition-duration: 250ms;
   }
   .net-link:hover,
   .net-link:focus {
@@ -563,6 +622,7 @@ margin-right: 0px;
     fill:#FFFFFF;
     align-items:center;
     justify-content: center;
+    
   }
 
   .icon-footer:hover,
@@ -770,6 +830,8 @@ flex-wrap: wrap;
   margin-left: 8px;
   border-width: 0px;
   padding: 6px 22px;
+  transition-property: background-color, color,box-shadow;
+  transition-duration: 250ms;
   }
   .button-portfolio:not(:last-child) {
     margin-right: 8px;
@@ -778,7 +840,7 @@ flex-wrap: wrap;
   .button-portfolio:focus {
     background: var(--primary-accent-color);
   /* shadow-middle */
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   font-family:inherit;
   font-weight:inherit;
@@ -800,7 +862,8 @@ flex-wrap: wrap;
   border-radius: 4px;
   border-width: 0px;
   padding: 6px 22px;
-
+  transition-property: background-color, color;
+  transition-duration: 250ms;
    }
 
   /* .button-portfolio:last-child {
@@ -842,6 +905,8 @@ flex-wrap: wrap;
 width: 370px;
 margin-left: 30px;
 margin-bottom: 30px;
+transition-property: background-color, color,box-shadow;
+transition-duration: 250ms;
   }
 
 .project-item:hover,
@@ -854,7 +919,13 @@ margin-bottom: 30px;
   .project-item:nth-child(n+7) {
     margin-bottom: 0px;
   }
-
+.img-cover {
+  background: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height: 294px;
+  
+  
+}
  .border-special {
   border-left:1px;
   border-right:1px;
