@@ -949,7 +949,7 @@ overflow: hidden;
   width: 370px;
   height: 294px;
   position:relative;
-  
+  overflow: hidden;
 }
 .img-cover::before {
   position:absolute;
@@ -976,5 +976,13 @@ overflow: hidden;
   padding-top:20px;
   padding-bottom:20px;
   padding-left: 24px;
-
+ 
+ }
+ .over-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  
+  color: #FFFFFF;
  }
