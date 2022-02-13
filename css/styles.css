@@ -324,6 +324,7 @@ width: 528px;
 height: 581px;
 background: #FFFFFF;
 padding: 40px;
+
 }
 .icon-close {
   width: 18px;
@@ -355,6 +356,73 @@ letter-spacing: 0.03em;
 color: #212121;
 margin-bottom: 30px;
 }
+.modal-icons {
+  fill:#212121;
+  width: 18px;
+height: 18px;
+position:absolute;
+top: 11px;
+left:12px;
+justify-items: center;
+}
+.modal-label {
+  color: #757575;
+  font-weight: normal;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+margin-bottom: 4px;
+}
+.modal-input {
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+
+}
+.modal-input:hover, 
+.modal-input:focus {
+ color: var(--primary-accent-color);
+ cursor: pointer;
+}
+.modal-label:hover,
+.modal-label:focus .modal-icons{
+  color: var(--primary-accent-color);
+  fill: var(--primary-accent-color);
+  cursor: pointer;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-field input {
+  width: 100%;
+  padding: 11px 12px;
+}
+.form-field input::placeholder {
+  font-size: 14px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+textarea {
+width: 448px;
+height: 120px;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+
+padding:12px 16px;
+}
 .btn-send {
     /*параментры поля кнопки */
   background:var(--primary-accent-color);
@@ -377,6 +445,9 @@ margin-bottom: 30px;
   top: 440px;
   transition-property: background-color;
   transition-duration: 250ms;
+  justify-items: center;
+  align-items: center;
+
   }
   
   .btn-send:hover {
@@ -761,7 +832,64 @@ margin-bottom: 10px;
   .contacts-footer:last-child {
     margin-bottom:0px;
   }
-  
+  .follow-footer {
+    margin-left: 93px;
+  }
+  .follow-btn {
+ background:var(--primary-accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+align-items: center;
+border-radius:4px;
+border-width:0 ;
+/* параментрытекста кнопки */
+font-family:inherit;
+font-weight: 900;
+font-size: 16px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--main-bcg-color);
+top: 440px;
+transition-property: background-color;
+transition-duration: 250ms;
+justify-items: center;
+align-items: center;
+  }
+
+  .follow-btn:hover,
+  .follow-btn:focus {
+    text-decoration: underline var(--primary-accent-color);
+    color:var(--main-bcg-color);
+    background-color:var(--secondary-accent-color);
+    cursor:pointer;
+    }
+  .footer-input {
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-input:hover,
+  .footer-input:focus {
+    border: 1px solid var(--primary-accent-color);
+    cursor: pointer;
+  }
+  .send-icon {
+    fill: white;
+    height: 24px;
+    width:24px;
+  }
+
   /* Последняя секция */
   .client-container {
   

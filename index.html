@@ -50,17 +50,37 @@
         </button>
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="js-modal-form">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name"/>
-            <label for="tel">Телефон</label>
-            <input type="tel" name="name" id="tel"/>
-            <label for="email">Почта</label>
-            <input type="email" name="name" id="email"/>
-            <label for="">Комментарий</label>
-            <input type="text" name="name" id="name"/>
-            <input type="checkbox" name="" value="" id="agreement"/>
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            
+        <div class="form-field">
+            <label class="modal-label" for="name">Имя</label>
+            <input class="modal-input" type="text" name="name" id="name"/>
+            <svg class="modal-icons">
+                <use  href="./images/sprite.svg#icon-person"></use>
+            </svg> 
+        </div>
+        <div class="form-field">
+            <label  class="modal-label" for="tel">Телефон</label>
+            <input class="modal-input" type="tel" name="tel" id="tel"/>
+            <svg class="modal-icons">
+                <use  href="./images/sprite.svg#icon-phone"></use>
+            </svg> 
+        </div>
+        <div class="form-field">
+            <label  class="modal-label" for="email">Почта</label>
+            <input class="modal-input" type="email" name="email" id="email"/>
+            <svg class="modal-icons">
+                <use  href="./images/sprite.svg#icon-email"></use>
+            </svg> 
+        </div>
+        <div class="form-field">
+            <label  class="modal-label" for="">Комментарий</label>
+            <textarea class="modal-textarea" name="comment" id="name" placeholder="Введите текст"></textarea>
+        
+        </div>
+        <div class="form-field">
+            <input  class="modal-input" type="checkbox" name="" value="" id="agreement"/>
+            <label  class="modal-label" for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        </div>  
+
 <button type="submit" class="btn-send">Отправить</button>
         </form>
     </div>
@@ -342,6 +362,15 @@
                 </svg>
             </a></li>
         </ul>
+    </li>
+    <li class="follow-footer">
+        <h3 class="join">Подпишитесь на рассылку</h3>
+    
+        <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail"/>
+        <button type="submit" class="follow-btn">Подписаться</button>
+        <svg class="send-icon">
+            <use href="./images/sprite.svg#icon-send"></use>
+        </svg>
     </li>
 </ul>
     </div>
