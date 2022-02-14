@@ -344,7 +344,10 @@ top:8px;
 right:8px;
 cursor: pointer;
 }
-
+.modal-button:hover, 
+.modal-button:focus {
+  fill: var(--primary-accent-color);
+}
 .modal-text {
 
 font-weight: 700;
@@ -834,6 +837,13 @@ margin-bottom: 10px;
   }
   .follow-footer {
     margin-left: 93px;
+    
+  }
+  .follow-form {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+align-items: center;
   }
   .follow-btn {
  background:var(--primary-accent-color);
@@ -856,8 +866,9 @@ color:var(--main-bcg-color);
 top: 440px;
 transition-property: background-color;
 transition-duration: 250ms;
-justify-items: center;
+display: flex;
 align-items: center;
+justify-content: center;
   }
 
   .follow-btn:hover,
@@ -888,6 +899,7 @@ color: rgba(255, 255, 255, 0.6);
     fill: white;
     height: 24px;
     width:24px;
+    margin-left: 10px;
   }
 
   /* Последняя секция */
