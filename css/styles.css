@@ -344,8 +344,7 @@ top:8px;
 right:8px;
 cursor: pointer;
 }
-.modal-button:hover, 
-.modal-button:focus {
+.modal-button:hover .icon-close {
   fill: var(--primary-accent-color);
 }
 .modal-text {
@@ -393,17 +392,29 @@ border-radius: 4px;
   fill: var(--primary-accent-color);
   cursor: pointer;
 }
-
+.check-form {
+  margin-bottom: 30px;
+}
+.button-form {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-form a{
+  color: var(--primary-accent-color);
+  text-decoration: underline;
+}
 .form-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  position: relative;
 }
 .form-field input {
   width: 100%;
   padding: 11px 12px;
+  position: relative;
 }
+
 .form-field input::placeholder {
   font-size: 14px;
 line-height: 1.16;
