@@ -379,7 +379,6 @@ margin-bottom: 4px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
-
 }
 .modal-input:hover, 
 .modal-input:focus {
@@ -412,7 +411,7 @@ border-radius: 4px;
 .form-field input {
   width: 100%;
   padding: 11px 12px;
-  position: relative;
+
 }
 
 .form-field input::placeholder {
